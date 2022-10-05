@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BAC0C8"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/menuTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/title"
+        android:textColor="#616161"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImv" />
+
+    <Button
+        android:id="@+id/decideBnt"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginRight="-8dp"
+        android:layout_marginBottom="-8dp"
+        android:text="@string/decideBnt"
+        android:textColor="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/newFoodEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:backgroundTint="#646A6E"
+        android:ems="10"
+        android:hint="@string/newFoodHint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#646A6E"
+        android:textCursorDrawable="@drawable/cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTv"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/addFoodBnt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF56747E"
+        android:text="@string/addFoodBnt"
+        android:textColor="#F5F5F5"
+        app:layout_constraintEnd_toEndOf="@id/newFoodEditText"
+        app:layout_constraintStart_toStartOf="@id/newFoodEditText"
+        app:layout_constraintTop_toBottomOf="@+id/newFoodEditText"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
